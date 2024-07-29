@@ -135,13 +135,23 @@ function Login() {
                 <span
                         style={{ color: "blue", fontSize: "15px", cursor: "pointer" }}
                         onClick={() => {
-                            navigate("/dashboard");
+                            navigate("/userdashboard");
                         }}
                     >
                     Submit
                     </span>
                 </StyledButton>
-              
+                <Typography style={{ color: "black", fontSize: "15px", padding: "20px" }}>
+                    Not Registered yet?{" "}
+                    <span
+                        style={{ color: "blue", fontSize: "15px", cursor: "pointer" }}
+                        onClick={() => {
+                            navigate("/register");
+                        }}
+                    >
+                        Create an Account.
+                    </span>
+                </Typography>
             </FormContainer>
           
         </ModelContainer>
